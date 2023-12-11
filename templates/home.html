@@ -5,10 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pelican Surf Report</title>
     <link rel="stylesheet" href="/static/home.css" />
+    <style>
+        .pointer {
+            background-color: #dc7c06;
+            grid-area: 1/1;
+            z-index: 10;
+            height: 20px;
+            aspect-ratio: 2/1;
+            clip-path: polygon(0 0, 100% 0, 50% 100%);
+            margin: auto;
+            transform: rotate({{wave_direction}}deg)
+        }
+    </style>
 </head>
-<div class="wrapper">
-    <body>
-        <div class="container">
+<div class="container">
             <header class="header">
                 <div class="logo">
                     <img src="/static/pelican.png" alt="Pelican" width="150" height=100>
@@ -16,22 +26,18 @@
                 <h1> Pelican Surf Report </h1>
             </header>
 
-            <h2> Arecibo, Puerto Rico: Surf Conditions </h2>
-            <h3>Overall Wave Size and Direction</h3>
-            <p>{{ wave_data[2] }} m || {{direction_data[1]}}</p>
-            <h3>Wind Swell Conditions</h3>
-            <p>{{ wave_data[0] }} m at {{ period_data[0] }} seconds || {{direction_data[0]}}</p>
+            <h2> Arecibo, Puerto Rico : Surf Conditions </h2>
             <h3>Swell Conditions</h3>
-            <p>{{ wave_data[1] }} m at {{ period_data[1] }} seconds || {{direction_data[2]}} degrees</p>
-            <h3>Wind Speed</h3>
-            <p> Wind speed: {{wind_speed}} </p>
+            <div class="compass">
+                <div class="dot"></div>
+                    <div class="pointer"></div>
+            </div>
+            <p>{{wave_data}} m at {{period_data}} seconds || {{wave_direction}} degrees</p>
+
+            <h3>Wind Speed and direction</h3>
+            <p> {{wind_speed}} || {{wind_direction}}</p>
+
             <h3>Wind gusts</h3>
-            <p>Wind gusts: {{wind_gusts}}</p>
-            <h3>Wind direction</h3>
-            <p>Wind direction: {{wind_direction}}</p>
-
-
+            <p>{{wind_gusts}}</p>
         </div>
-    </body>
-</div>
 </html>
