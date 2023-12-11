@@ -12,9 +12,9 @@
             z-index: 10;
             height: 20px;
             aspect-ratio: 2/1;
-            clip-path: polygon(0 0, 100% 0, 50% 100%);
+            clip-path: polygon(30% 0, 70% 0, 50% 100%);
             margin: auto;
-            transform: rotate({{wave_direction}}deg)
+            transform: rotate({{arecibo_wave_conditions[2]}})
         }
     </style>
 </head>
@@ -32,12 +32,12 @@
                 <div class="dot"></div>
                     <div class="pointer"></div>
             </div>
-            <p>{{wave_data}} m at {{period_data}} seconds || {{wave_direction}} degrees</p>
+            <p>{{arecibo_wave_conditions[0]}} at {{arecibo_wave_conditions[1]}} || {{arecibo_wave_conditions[2]}}</p>
 
             <h3>Wind Speed and direction</h3>
-            <p> {{wind_speed}} || {{wind_direction}}</p>
+            <p> {{arecibo_wind_conditions[0]}} || {{arecibo_wind_conditions[2]}}</p>
 
             <h3>Wind gusts</h3>
-            <p>{{wind_gusts}}</p>
+            <p>{{arecibo_wind_conditions[1]}}</p>
         </div>
 </html>
