@@ -6,7 +6,7 @@
     <title>Pelican Surf Report</title>
     <link rel="stylesheet" href="/static/home.css" />
     <style>
-        .pointer {
+        .pointerwave {
             background-color: #dc7c06;
             grid-area: 1/1;
             z-index: 10;
@@ -15,6 +15,16 @@
             clip-path: polygon(30% 0, 70% 0, 50% 100%);
             margin: auto;
             transform: rotate({{sanjuan_wave_conditions[2]}})
+        }
+        .pointerwind {
+            background-color: #dc7c06;
+            grid-area: 1/1;
+            z-index: 10;
+            height: 20px;
+            aspect-ratio: 2/1;
+            clip-path: polygon(30% 0, 70% 0, 50% 100%);
+            margin: auto;
+            transform: rotate({{sanjuan_wind_conditions[2]}})
         }
     </style>
 </head>
@@ -30,11 +40,15 @@
             <h3>Swell Conditions</h3>
             <div class="compass">
                 <div class="dot"></div>
-                    <div class="pointer"></div>
+                    <div class="pointerwave"></div>
             </div>
             <p>{{sanjuan_wave_conditions[0]}} at {{sanjuan_wave_conditions[1]}} || {{sanjuan_wave_conditions[2]}}</p>
 
             <h3>Wind Speed and Direction</h3>
+            <div class="compass">
+                <div class="dot"></div>
+                    <div class="pointerwind"></div>
+            </div>
             <p> {{sanjuan_wind_conditions[0]}} || {{sanjuan_wind_conditions[2]}}</p>
 
             <h3>Wind gusts</h3>
