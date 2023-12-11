@@ -286,6 +286,6 @@ class Winds:
 
         try:
             direction = int(self.wind_direction)
-            return str(direction) + ' ' + f'{self.direction_units}'
+            return str(direction) + 'deg'
         except ValueError:
             return self.wind_direction
