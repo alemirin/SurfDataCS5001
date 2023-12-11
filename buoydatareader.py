@@ -232,11 +232,11 @@ class Winds:
         wind_gusts = ''
         wind_direction = ''
         if data_list[6] != "MM":
-            wind_speed = data_list[8]
+            wind_speed = data_list[6]
         if data_list[7] != "MM":
-            wind_gusts = data_list[9]
+            wind_gusts = data_list[7]
         if data_list[5] != "MM":
-            wind_direction = data_list[11]
+            wind_direction = data_list[5]
 
         return [wind_speed, wind_gusts, wind_direction]
 
