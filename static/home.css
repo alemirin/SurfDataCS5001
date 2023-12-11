@@ -1,0 +1,72 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #dc7c06;
+  text-align: center;
+  background-color: #022147;
+}
+/*
+ * Formatting the header area
+ */
+ .logo img {
+  border-radius: 8px;
+  margin-left: 0;
+  margin-right: 0;
+  box-shadow: 8px 8px 8px #075985;
+}
+
+.header {
+  margin-bottom: 20px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  padding: 10px 30px 10px 30px;
+}
+
+/*
+ * Centering the body content
+ */
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  justify-content: center;
+  align-content: center;
+}
+
+
+h1 {
+  background-color: #033879;
+  padding: 20px 20px 20px 20px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 1.5em;
+  margin-top: 20px;
+  text-align: center;
+  letter-spacing: 0px;
+  background-color: #022147
+}
+h3 {
+  font-size: 1.4em;
+  font-weight: 300;
+  color: #dc7c06
+  margin-top: 20px;
+  text-align: center;
+  letter-spacing: 1px;
+  background-color: #033879;
+}
+
+p {
+  text-align: center;
+  background-color: #022147
+}
