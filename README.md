@@ -21,7 +21,7 @@ Highlight some key features of this project that you want to show off/talk about
 ## Guide
 How do we run your project? What should we do to see it in action? - Note this isn't installing, this is actual use of the project.. If it is a website, you can point towards the gui, use screenshots, etc talking about features.
 
-• Once all of the things are downloaded, open a terminal window at the directory where surfapp.py, buoydatareader.py and the static and templates folder are located and run the webpage within terminal using python3 surfapp.py. Once the terminal gives a message that the app is running on your IP address, go to your browser on the device and access the webpage using the url localhost:5000 . I've also included screenshots of how the page appeared on my device.
+• Once all of the things are downloaded, open a terminal window at the directory where surfapp.py, buoydatareader.py and the static and templates folder are located and run the webpage within terminal using python3 surfapp.py. Once the terminal gives a message that the app is running on your IP address, go to your browser on the device and access the webpage using the url localhost:5000 . I've also included screenshots of how the page appeared on my device. You can also access the data for San Juan by adding "/sanjuan" to the localhost url.
 
 
 
